@@ -1,0 +1,52 @@
+{
+    "metrics" : [
+                    { 
+                        "namespace" : "AWS/RDS", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "DBInstanceIdentifier","Value" : "<instance>"}] , 
+                        "metrics" : [
+                                    { "metric_name": "BinLogDiskUsage", "stat" : "Average"},
+                                    { "metric_name": "BurstBalance", "stat" : "Average"},
+                                    { "metric_name": "CheckpointLag", "stat" : "Average"},
+                                    { "metric_name": "ConnectionAttempts", "stat" : "Average"},
+                                    { "metric_name": "CPUCreditBalance", "stat" : "Average"},
+                                    { "metric_name": "CPUCreditUsage", "stat" : "Average"},
+                                    { "metric_name": "CPUSurplusCreditBalance", "stat" : "Average"},
+                                    { "metric_name": "CPUSurplusCreditsCharged", "stat" : "Average"},
+                                    { "metric_name": "CPUUtilization", "stat" : "Average"},
+                                    { "metric_name": "DatabaseConnections", "stat" : "Average"},
+                                    { "metric_name": "DBLoad", "stat" : "Average"},
+                                    { "metric_name": "DBLoadCPU", "stat" : "Average"},
+                                    { "metric_name": "DBLoadNonCPU", "stat" : "Average"},
+                                    { "metric_name": "DiskQueueDepth", "stat" : "Average"},
+                                    { "metric_name": "DiskQueueDepthLogVolume", "stat" : "Average"},
+                                    { "metric_name": "FreeableMemory", "stat" : "Average"},
+                                    { "metric_name": "FreeStorageSpace", "stat" : "Average"},
+                                    { "metric_name": "FreeStorageSpaceLogVolume", "stat" : "Average"},
+                                    { "metric_name": "LVMReadIOPS", "stat" : "Sum"},
+                                    { "metric_name": "LVMWriteIOPS", "stat" : "Sum"},
+                                    { "metric_name": "MaximumUsedTransactionIDs", "stat" : "Average"},
+                                    { "metric_name": "NetworkReceiveThroughput", "stat" : "Sum"},
+                                    { "metric_name": "NetworkTransmitThroughput", "stat" : "Sum"},
+                                    { "metric_name": "ReadIOPSLogVolume", "stat" : "Sum"},
+                                    { "metric_name": "ReadIOPS", "stat" : "Sum"},
+                                    { "metric_name": "ReadLatency", "stat" : "Average"},
+                                    { "metric_name": "ReadLatencyLogVolume", "stat" : "Average"},
+                                    { "metric_name": "ReadThroughput", "stat" : "Sum"},
+                                    { "metric_name": "ReadThroughputLogVolume", "stat" : "Sum"},
+                                    { "metric_name": "ReplicaLag", "stat" : "Average"},
+                                    { "metric_name": "TransactionLogsDiskUsage", "stat" : "Average"},
+                                    { "metric_name": "TransactionLogsGeneration", "stat" : "Average"},
+                                    { "metric_name": "SwapUsage", "stat" : "Average"},
+                                    { "metric_name": "WriteIOPS", "stat" : "Sum"},
+                                    { "metric_name": "WriteLatency", "stat" : "Average"},
+                                    { "metric_name": "WriteThroughput", "stat" : "Sum"},
+                                    { "metric_name": "WriteIOPSLogVolume", "stat" : "Sum"},
+                                    { "metric_name": "WriteLatencyLogVolume", "stat" : "Average"},
+                                    { "metric_name": "WriteThroughputLogVolume", "stat" : "Sum"}
+                        ]
+                    }
+    ]
+    
+}

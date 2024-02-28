@@ -1,0 +1,105 @@
+{
+    "metrics" : [
+                    { 
+                        "namespace" : "AWS/ElastiCache", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "CacheClusterId","Value" : "<cluster_id>"},{ "Name" : "CacheNodeId","Value" : "<node_id>"}] , 
+                        "metrics" : [
+                                    { "metric_name": "CPUUtilization", "stat" : "Average"},
+                                    { "metric_name": "CPUCreditBalance", "stat" : "Average"},
+                                    { "metric_name": "CPUCreditUsage", "stat" : "Average"},
+                                    { "metric_name": "FreeableMemory", "stat" : "Average"},
+                                    { "metric_name": "NetworkBytesIn", "stat" : "Average"},
+                                    { "metric_name": "NetworkBytesOut", "stat" : "Average"},
+                                    { "metric_name": "NetworkPacketsIn", "stat" : "Average"},
+                                    { "metric_name": "NetworkPacketsOut", "stat" : "Average"},
+                                    { "metric_name": "NetworkBandwidthInAllowanceExceeded", "stat" : "Average"},
+                                    { "metric_name": "NetworkConntrackAllowanceExceeded", "stat" : "Average"},
+                                    { "metric_name": "NetworkBandwidthOutAllowanceExceeded", "stat" : "Average"},
+                                    { "metric_name": "NetworkPacketsPerSecondAllowanceExceeded", "stat" : "Average"},
+                                    { "metric_name": "NetworkMaxBytesIn", "stat" : "Average"},
+                                    { "metric_name": "NetworkMaxBytesOut", "stat" : "Average"},
+                                    { "metric_name": "NetworkMaxPacketsIn", "stat" : "Average"},
+                                    { "metric_name": "NetworkMaxPacketsOut", "stat" : "Average"},
+                                    { "metric_name": "SwapUsage", "stat" : "Average"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/ElastiCache", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "CacheClusterId","Value" : "<cluster_id>"},{ "Name" : "CacheNodeId","Value" : "<node_id>"}] , 
+                        "metrics" : [
+                                    { "metric_name": "BytesUsedForCache", "stat" : "Average"},
+                                    { "metric_name": "CacheHits", "stat" : "Average"},
+                                    { "metric_name": "CacheMisses", "stat" : "Average"},
+                                    { "metric_name": "CommandAuthorizationFailures", "stat" : "Average"},
+                                    { "metric_name": "CacheHitRate", "stat" : "Average"},
+                                    { "metric_name": "CurrConnections", "stat" : "Average"},
+                                    { "metric_name": "CurrItems", "stat" : "Average"},
+                                    { "metric_name": "CurrVolatileItems", "stat" : "Average"},
+                                    { "metric_name": "DatabaseCapacityUsagePercentage", "stat" : "Average"},
+                                    { "metric_name": "DatabaseCapacityUsageCountedForEvictPercentage", "stat" : "Average"},
+                                    { "metric_name": "DatabaseMemoryUsagePercentage", "stat" : "Average"},
+                                    { "metric_name": "DatabaseMemoryUsageCountedForEvictPercentage", "stat" : "Average"},
+                                    { "metric_name": "EngineCPUUtilization", "stat" : "Average"},
+                                    { "metric_name": "Evictions", "stat" : "Average"},
+                                    { "metric_name": "MemoryFragmentationRatio", "stat" : "Average"},
+                                    { "metric_name": "NewConnections", "stat" : "Average"},
+                                    { "metric_name": "Reclaimed", "stat" : "Average"},
+                                    { "metric_name": "ReplicationBytes", "stat" : "Average"},
+                                    { "metric_name": "ReplicationLag", "stat" : "Average"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/ElastiCache", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "CacheClusterId","Value" : "<cluster_id>"},{ "Name" : "CacheNodeId","Value" : "<node_id>"}] , 
+                        "metrics" : [
+                                    { "metric_name": "ClusterBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "ClusterBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "EvalBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "EvalBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "GeoSpatialBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "GeoSpatialBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "GetTypeCmds", "stat" : "Average"},
+                                    { "metric_name": "GetTypeCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "HashBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "HashBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "HyperLogLogBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "HyperLogLogBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "JsonBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "JsonBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "JsonBasedGetCmds", "stat" : "Average"},
+                                    { "metric_name": "JsonBasedGetCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "JsonBasedSetCmds", "stat" : "Average"},
+                                    { "metric_name": "JsonBasedSetCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "KeyBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "KeyBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "ListBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "ListBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "NonKeyTypeCmds", "stat" : "Average"},
+                                    { "metric_name": "NonKeyTypeCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "PubSubBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "PubSubBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "SetBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "SetBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "SetTypeCmds", "stat" : "Average"},
+                                    { "metric_name": "SetTypeCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "SortedSetBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "SortedSetBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "StringBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "StringBasedCmdsLatency", "stat" : "Average"},
+                                    { "metric_name": "StreamBasedCmds", "stat" : "Average"},
+                                    { "metric_name": "StreamBasedCmdsLatency", "stat" : "Average"}
+                        ]
+                    }
+    ]
+    
+}
+
+
+
+

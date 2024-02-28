@@ -1,0 +1,152 @@
+{
+    "metrics" : [
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}] , 
+                        "metrics" : [
+                                     { "metric_name": "ConsumedReadCapacityUnits", "stat" : "Sum"},  
+                                     { "metric_name": "ConsumedWriteCapacityUnits", "stat" : "Sum"},  
+                                     { "metric_name": "ReadThrottleEvents", "stat" : "Sum"},  
+                                     { "metric_name": "WriteThrottleEvents", "stat" : "Sum"},  
+                                     { "metric_name": "ProvisionedWriteCapacityUnits", "stat" : "Sum"},  
+                                     { "metric_name": "ProvisionedReadCapacityUnits", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"},{ "Name" : "Operation","Value" : "PutItem"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}, { "Name" : "Operation","Value" : "GetItem"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}, { "Name" : "Operation","Value" : "Query"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}, { "Name" : "Operation","Value" : "Scan"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}, { "Name" : "Operation","Value" : "DeleteItem"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}, { "Name" : "Operation","Value" : "UpdateItem"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}, { "Name" : "Operation","Value" : "BatchGetItem"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}, { "Name" : "Operation","Value" : "TransactWriteItems"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}, { "Name" : "Operation","Value" : "TransactGetItems"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}, { "Name" : "Operation","Value" : "ExecuteTransaction"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}, { "Name" : "Operation","Value" : "BatchExecuteStatement"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    },
+                    { 
+                        "namespace" : "AWS/DynamoDB", 
+                        "period" : <period>,
+                        "interval" : <interval>, 
+                        "dimensions" : [{ "Name" : "TableName","Value" : "<table_name>"},{ "Name" : "GlobalSecondaryIndexName","Value" : "<index_name>"}, { "Name" : "Operation","Value" : "ExecuteStatement"}] , 
+                        "metrics" : [
+                                        { "metric_name":"SuccessfulRequestLatency", "stat" : "Average"},
+                                        { "metric_name":"ThrottledRequests", "stat" : "Sum"},
+                                        { "metric_name":"SystemErrors", "stat" : "Sum"}
+                        ]
+                    }
+    ]
+    
+}
+

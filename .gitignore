@@ -1,3 +1,9 @@
+client/__pycache__
+manage
+test
+server/node_modules
+frontend/node_modules
+
 # Logs
 logs
 *.log
